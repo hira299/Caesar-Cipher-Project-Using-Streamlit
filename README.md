@@ -1,9 +1,5 @@
 # Caesar-Cipher-Project-Using-Streamlit
-Here's a README file for your Caesar Cipher project using Streamlit:
 
----
-
-# Caesar Cipher
 
 This project is a simple implementation of the Caesar Cipher, a well-known encryption technique, using the Streamlit library in Python. The Caesar Cipher is a type of substitution cipher where each letter in the plaintext is shifted by a certain number of positions down or up the alphabet.
 
