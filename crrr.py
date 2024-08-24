@@ -9,14 +9,11 @@ def caesar_cipher(message, shift, ac):
 
     for char in message:
         if char.islower():
-            start = ord('a')
-            result += chr(((ord(char) - start + shift) % 26) + start)
+            result += chr(((ord(char) - ord('a') + shift) % 26) + ord('a'))
         elif char.isupper():
-            start = ord('A')
-            result += chr(((ord(char) - start + shift) % 26) + start)
+            result += chr(((ord(char) - ord('A') + shift) % 26) + ord('A'))
         elif char.isdigit():
-            start = ord('0')
-            result += chr(((ord(char) - start + shift) % 10) + start)
+            result += chr(((ord(char) - ord('0') + shift) % 10) + ord('0'))
         else:
             result += char  #if char is not alphabet/num
 
